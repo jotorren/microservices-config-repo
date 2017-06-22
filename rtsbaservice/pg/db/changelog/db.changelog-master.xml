@@ -7,7 +7,7 @@
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.7.xsd">
     <changeSet author="jotorren" id="quartz_tables_postgresql" dbms="postgresql">
         <sqlFile encoding="utf8"
-                 path="url:http://localhost:8888/rtsbaservice/pg/master/db/changelog/sql/quartz_tables_postgres.sql"
+                 path="url:${spring.cloud.config.uri}/rtsbaservice/pg/master/db/changelog/sql/quartz_tables_postgres.sql"
                  splitStatements="true"
                  stripComments="true"/>
     </changeSet>
